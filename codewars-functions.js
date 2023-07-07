@@ -25,6 +25,25 @@ function paperwork(n, m) {
   }
 
 
+  ........................................................................
+
+
+  function betterThanAverage(classPoints, yourPoints) {
+
+    const classAverage = classPoints.reduce((acc, ind)=> acc + ind, 0)/classPoints.length;
+    
+    if (classAverage >= yourPoints){
+    return false}
+    else {return true}
+    
+      
+      }
+
+
+........................................................................
+
+
+
 
 
 
