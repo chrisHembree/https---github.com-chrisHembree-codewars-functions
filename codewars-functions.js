@@ -53,3 +53,73 @@ function booleanToString(b){
 
 
   ........................................................................
+
+  function findNeedle(haystack) {
+    for(let i = 0; i < haystack.length; i++) {
+      if(haystack[i] === 'needle') return `found the needle at position ${i}`;
+    }
+  }
+
+
+
+//   better but not mine
+
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle");
+  }
+  ........................................................................
+
+
+  function smash (words) {
+    return words.join(" ")};
+
+    ........................................................................
+
+
+    function setAlarm(employed, vacation){
+
+        if (employed == true && vacation == false)
+        
+        {return true}
+        else
+          {return false}
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
