@@ -86,19 +86,47 @@ function findNeedle(haystack) {
       }
 
 
+      ........................................................................
+
+function queuetime(customers, n) {
+    let tillstotalTime = []
+    let tillOccupants = []
+    let currentQueue = customers
+
+   function initializeTills() {
+        for ( i = 0; n > 0; i++) {
+        tillOccupants[i] = currentQueue[i]
+        currentQueue.splice(i, 1)
+    }
+}
+
+initializeTills()
+
+while (currentQueue!== []) {
+    tillOccupants.forEach((occupant) => {
+    if (tillOccupants[tillOccupants.indexOf(occupant)] > currentQueue[0]) {
+        tillstotalTime[tillOccupants.indexOf(occupant)] == tillOccupants[tillOccupants.indexOf(occupant)]
+        tillOccupants[tillOccupants.indexOf(occupant)] = currentQueue[0]
+        currentQueue.splice(0, 1)
+    }
+} )
+}
+return Math.max(tillstotalTime)
+}
 
 
+........................................................................
 
-
-
-
-
-
-
-
-
-
-
+function queueTime(customers, n) {
+    let tillsTotalTime = new Array(n).fill(0);
+  
+    for (let i = 0; i < customers.length; i++) {
+      let minIndex = tillsTotalTime.indexOf(Math.min(...tillsTotalTime));
+      tillsTotalTime[minIndex] += customers[i];
+    }
+  
+    return Math.max(...tillsTotalTime);
+  }
 
 
 
