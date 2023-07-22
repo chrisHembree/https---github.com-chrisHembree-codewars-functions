@@ -277,7 +277,7 @@ function queueTime(customers, n) {
       }
 
 
-      
+
       ........................................................................
 function pipeFix(numbers){
   
@@ -295,6 +295,121 @@ function pipeFix(numbers){
    
 }
   
+........................................................................
+function getRealFloor(n) {
+  if (n > 0 && n < 13) {
+    return n-1;
+} 
+  if (n >= 13) {
+    return n-2; 
+}
+  if (n <= 0){
+    return n;
+  }
+}
+
+........................................................................
+
+function shortcut(string) {
+  let newString = string.split(''); 
+  
+  for (let i = 0; i < newString.length; i++) {
+    if (newString[i] === "a" || newString[i] === "e" || newString[i] === "i" || newString[i] === "o" || newString[i] === "u") {
+      newString.splice(i, 1); 
+      i--; 
+    }
+  }
+
+  return newString.join(''); 
+} 
+
+chatgpt refactor
+
+function shortcut(string) {
+  return string.replace(/[aeiou]/gi, '');
+}
+
+// In this version, the replace() method uses a regular expression [aeiou] to match any occurrence of the lowercase vowels "a", "e", "i", "o", or "u" in the input string (string). The /g flag makes the replacement global, meaning it replaces all occurrences of the matched characters, not just the first one. The /i flag makes the match case-insensitive, so both lowercase and uppercase vowels will be removed.
+
+// The second argument of replace() is an empty string '', which effectively removes the matched vowels from the string.
+
+........................................................................
+
+function addLength(str) {
+  
+  let newString = str.split(" ");
+                                                                                                                
+ return newString.map((word) => word + " " + word.split("").length );
+    
+}
+
+........................................................................
+kyle calculated the 2 for 1 mangos kata
+
+function mango(quantity, price){
+
+  if (quantity % 3 !== 0)
+   {return Math.floor(((quantity)-(quantity%3))*2/3*price) + (((quantity % 3)  ) * price) }
+ else
+
+ {return quantity*(2/3)*price}
+
+}
+
+........................................................................
+
+function cookie(x) {
+  if (typeof x === "string") {
+    return "Who ate the last cookie? It was Zach!";
+  } else if (typeof x === "number") {
+    if (Number.isInteger(x) || Number(x) % 1 !== 0) {
+      return "Who ate the last cookie? It was Monica!";
+    }
+  }
+  return "Who ate the last cookie? It was the dog!";
+}
+
+
+
+
+
+
+........................................................................
+
+
+
+
+
+........................................................................
+
+
+
+........................................................................
+
+
+
+
+........................................................................
+
+
+
+
+........................................................................
+
+
+
+
+
+
+........................................................................
+
+
+
+
+
+
+
+........................................................................
 
 
 
