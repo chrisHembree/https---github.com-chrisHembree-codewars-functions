@@ -437,12 +437,29 @@ return newArray
     ........................................................................
 
 
+function isPalindrome(x) {
+  const lowerCaseX = x.toLowerCase();
+  const reversedStr = lowerCaseX.split('').reverse().join('');
+  
+  if (lowerCaseX === reversedStr)
+    {return true}
+  else
+    {return false};
+}
+  
 
 
 
     ........................................................................
 
-
+    class SmallestIntegerFinder {
+  
+      findSmallestInt(args) {
+        
+         return Math.min(...args);
+            
+      }
+    }
 
 
 
