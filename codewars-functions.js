@@ -465,6 +465,25 @@ function isPalindrome(x) {
 
     ........................................................................
 
+    function arrayPlusArray(arr1, arr2) {
+    
+      return arr1.reduce((accumulator, currentValue) => accumulator + currentValue, 0) + arr2.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+       
+    }
+
+
+
+    ........................................................................
+
+
+    function greet(name){
+ 
+      if(name === "Johnny")
+        return "Hello, my love!";
+      else
+         return "Hello, " + name + "!";
+      
+    }
 
 
 
@@ -473,7 +492,38 @@ function isPalindrome(x) {
     ........................................................................
 
 
+    function DNAtoRNA(dna) {
+  
+      return dna.replace(/T/g, "U");
+     
+     }
+     
 
+
+
+    ........................................................................
+
+
+    function makeNegative(num) {
+      if (num > 0) {
+        return -num;
+      } else {
+        return num;
+      }
+    }
+
+
+
+    ........................................................................
+
+
+    function unusualFive() {
+ 
+      let numberFive = "seven";
+      let newArray = numberFive.split('')
+      return numberFive.length
+      
+    }
 
 
 
@@ -481,23 +531,13 @@ function isPalindrome(x) {
 
     ........................................................................
 
-
-
-
-
-
-    ........................................................................
-
-
-
-
-
-
-    ........................................................................
-
-
-
-
+    function litres(time) {
+  
+      let totalWater = time * 0.5
+      
+      return Math.floor(totalWater);
+        
+    }
 
 
 
@@ -505,20 +545,25 @@ function isPalindrome(x) {
     ........................................................................
 
 
-
-
-
-
-    ........................................................................
-
-
-
+    function litres(time) {
+    
+      return Math.floor(time * 0.5);
+        
+    }
 
 
     ........................................................................
 
-
-
+    function updateLight(current) {
+  
+      if (current == "green")
+        {return "yellow"}
+      if (current == "yellow")
+        {return "red"}
+      if (current == "red")
+        {return "green"};
+      
+      }
 
     ........................................................................
 
