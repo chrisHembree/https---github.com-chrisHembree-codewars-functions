@@ -567,14 +567,16 @@ function isPalindrome(x) {
 
     ........................................................................
 
-
-
-
-
+    function nameShuffler(str){
+      return str.split(' ').reverse().join(' ');
+          }
 
     ........................................................................
 
-
+    function validateHello(greetings) {
+      let pattern = /\b(hello|hola|ciao|salut|hallo|ahoj|czesc)\b/i;
+      return pattern.test(greetings);
+    }
 
 
 
