@@ -595,7 +595,132 @@ function isPalindrome(x) {
 
     ........................................................................
 
+const quarterOf = (month) => {
 
+  if (month < 4 )
+  {return 1}
+  if (month <= 6 && month > 3)
+  {return 2 }
+  if (month < 10 && month > 6)
+  {return 3}
+  if (month > 9)
+  {return 4}
+       
+}
+
+
+    ........................................................................
+
+    function maskify(cc) {
+      let replaceThis = Math.max(cc.length - 4, 0);
+      let mask = "#";
+      let finalProduct = mask.repeat(replaceThis);
+      return finalProduct + cc.slice(-4);
+    }
+    
+    
+    ........................................................................
+
+    function maskify(cc) {
+      let newString = [];
+      let hashtagSymbol = "#";
+    
+      for (let i = 0; i < cc.length -4; i++) {
+        newString.push(hashtagSymbol);
+      }
+    
+      return newString.join('') + cc.slice(-4);
+    }
+
+    ........................................................................
+
+
+    function maskify(cc) {
+      let symbol = [];
+      for (let i = 0; i < cc.length; i++) {
+        if (i < cc.length - 4) {
+          symbol.push("#");
+        } else {
+          symbol.push(cc[i]);
+        }
+      }
+      return symbol.join("");
+    }
+    
+    console.log(maskify("123456789"));
+
+
+
+
+
+    ........................................................................
+
+    function capitals(word) {
+      let newString = word.split('');
+      let newArray = [];
+      
+    function isUpperCase(character) {
+      return /^[A-Z]$/.test(character);
+    }
+    
+      for (let i = 0; i < newString.length; i++) {
+        if (isUpperCase(newString[i])) {
+          newArray.push(i);
+        }
+      }
+    
+      return newArray;
+    }
+    
+    console.log(capitals("DorKs"));
+
+    output [0, 3]
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    function capitals(word) {
+      let newString = word.split('');
+      let newArray = [];
+    
+    function isUpperCase(character) {
+      return /^[A-Z]$/.test(character);
+    }
+    
+      for (let i = 0; i < newString.length; i++) {
+        if (isUpperCase(newString[i])) {
+          newArray.push(newString[i]);
+        }
+      }
+    
+      return newArray;
+    }
+    
+    console.log(capitals("Hello, World"));
+    
+    ["H", "W"]
+
+    ........................................................................
+
+
+
+    ........................................................................
+
+
+    ........................................................................
+
+
+    ........................................................................
+
+
+
+    ........................................................................
+
+
+    ........................................................................
+
+    ........................................................................
+
+
+    ........................................................................
 
 
     ........................................................................
@@ -605,4 +730,4 @@ function isPalindrome(x) {
 
 
 
-    ........................................................................
+
