@@ -701,6 +701,38 @@ const quarterOf = (month) => {
     ........................................................................
 
 
+    function explode(s) {
+
+      let splitString = s.split('')
+      let newString = ""
+     
+        for (let i = 0; i < splitString.length; i++) {
+          newString += splitString[i].repeat(splitString[i]);
+                 
+        }
+        return newString
+         
+     }
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+function explode(s) {
+
+
+  let newArray = []
+ 
+    for (let i = 0; i < s.length; i++) {
+      newArray.push(s[i].repeat(s[i]));
+             
+    }
+    return newArray.join('')
+     
+ }
+ 
+
+
+
 
     ........................................................................
 
