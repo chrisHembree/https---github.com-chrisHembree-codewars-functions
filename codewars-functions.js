@@ -737,7 +737,34 @@ function explode(s) {
     ........................................................................
 
 
+    function solution(nums) {
+      if (nums === null) {
+        return [];
+      }
+      
+      let newArray = nums.sort((a, b) => a - b);
+      
+      return newArray;
+    }
+
+
+
+
     ........................................................................
+
+    function getMinMax(arr) {
+      if (arr.length === 0) {
+        return [undefined, undefined]; 
+      }
+    
+      let newMax = Math.max(...arr);
+      let newMin = Math.min(...arr);
+    
+      return [newMin, newMax];
+    }
+
+
+
 
 
     ........................................................................
