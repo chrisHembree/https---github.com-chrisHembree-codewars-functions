@@ -461,7 +461,7 @@ function isPalindrome(x) {
       }
     }
 
-
+   
 
     ........................................................................
 
@@ -471,7 +471,7 @@ function isPalindrome(x) {
        
     }
 
-
+        
 
     ........................................................................
 
@@ -768,6 +768,59 @@ function explode(s) {
 
 
     ........................................................................
+
+    function filter_list(l) {
+ 
+      let newList = []
+      
+      for (let i = 0; i < l.length; i++){
+         if (typeof l[i] === 'number') {
+          newList.push(l[i]);
+         }
+    }
+      return newList
+      
+    }
+
+
+
+    
+
+
+    
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+function findOdd(A) {
+  const counts = {};
+
+  for (const num of A) {
+    counts[num] = counts[num] ? counts[num] + 1 : 1;
+  }
+
+  for (const number in counts) {
+    let count = counts[number];
+    
+    if (count % 2 === 1) {
+      return parseInt(number);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+
+
+
 
 
 
